@@ -6,17 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		811D6DC32D9EE97E00463824 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6DBC2D9EE97E00463824 /* Preview Assets.xcassets */; };
+		811D6DC42D9EE97E00463824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6DBE2D9EE97E00463824 /* Assets.xcassets */; };
+		811D6DC52D9EE97E00463824 /* ColourFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6DC02D9EE97E00463824 /* ColourFinderApp.swift */; };
+		811D6DC62D9EE97E00463824 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6DC12D9EE97E00463824 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		811D6DAA2D9EE96F00463824 /* ColourFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColourFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		811D6DBC2D9EE97E00463824 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		811D6DBE2D9EE97E00463824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		811D6DBF2D9EE97E00463824 /* ColourFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColourFinder.entitlements; sourceTree = "<group>"; };
+		811D6DC02D9EE97E00463824 /* ColourFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourFinderApp.swift; sourceTree = "<group>"; };
+		811D6DC12D9EE97E00463824 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		811D6DAC2D9EE96F00463824 /* ColourFinder */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ColourFinder;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		811D6DA72D9EE96F00463824 /* Frameworks */ = {
@@ -32,7 +36,7 @@
 		811D6DA12D9EE96F00463824 = {
 			isa = PBXGroup;
 			children = (
-				811D6DAC2D9EE96F00463824 /* ColourFinder */,
+				811D6DC22D9EE97E00463824 /* ColourFinder */,
 				811D6DAB2D9EE96F00463824 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +47,42 @@
 				811D6DAA2D9EE96F00463824 /* ColourFinder.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		811D6DBD2D9EE97E00463824 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				811D6DBC2D9EE97E00463824 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		811D6DC22D9EE97E00463824 /* ColourFinder */ = {
+			isa = PBXGroup;
+			children = (
+				811D6DC02D9EE97E00463824 /* ColourFinderApp.swift */,
+				811D6DC82D9EE99000463824 /* Model */,
+				811D6DC72D9EE98A00463824 /* Views */,
+				811D6DBD2D9EE97E00463824 /* Preview Content */,
+				811D6DBE2D9EE97E00463824 /* Assets.xcassets */,
+				811D6DBF2D9EE97E00463824 /* ColourFinder.entitlements */,
+			);
+			path = ColourFinder;
+			sourceTree = "<group>";
+		};
+		811D6DC72D9EE98A00463824 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				811D6DC12D9EE97E00463824 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		811D6DC82D9EE99000463824 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +99,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				811D6DAC2D9EE96F00463824 /* ColourFinder */,
 			);
 			name = ColourFinder;
 			packageProductDependencies = (
@@ -109,6 +146,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811D6DC32D9EE97E00463824 /* Preview Assets.xcassets in Resources */,
+				811D6DC42D9EE97E00463824 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811D6DC52D9EE97E00463824 /* ColourFinderApp.swift in Sources */,
+				811D6DC62D9EE97E00463824 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
