@@ -8,12 +8,25 @@
 import SwiftUI
 
 struct CreateColourView: View {
+    
+    // MARK: Stored properties
+    @State var currentHue = 0.0
+    
+    // MARK: Computed properties
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
+            Slider(value: $currentHue, in: 0...360.0)
+            
+            Rectangle()
+                .fill(
+                    Color(
+                        hue: currentHue/360.0,
+                        saturation: 100.0/100.0,
+                        brightness: 100.0/100.0
+                    )
+                )
+                .frame(width: 100, height: 100)
         }
         .padding()
     }
